@@ -1,0 +1,19 @@
+{
+  "filename": "NSFS_Approval_Matrix_v1.pdf",
+  "document_title": "NSFS_Approval_Matrix_v1",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nApproval Matrix\nVersion 1.0\nDocument Title: NorthStar Financial Services Approval Matrix\nDocument ID: NSFS-REF-005\nVersion: 1.0\nOwner: Operations Governance Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Operations Governance\n1. Purpose\nThis document defines approval authority levels for selected operational actions, exceptions, esca-\nlations, and case closures.\n2. Scope\nThis matrix applies to approvals related to:\n• Exception requests\n• High-risk case closures\n• Remediation plan acceptance\n• Audit evidence certification\n• Process deviations\n• SLA pause approvals\n3. Approval Roles\n• Analyst\n• Team Manager\n• Senior Manager\n• Compliance Lead\n• Control Manager\n• Director\n• Head of Risk and Control Governance\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "4. Approval Matrix\n4.1 Standard Case Closure\nApproval Required: Analyst may close if no exception, no escalation, and no discrepancy exists.\n4.2 Priority Case Closure\nApproval Required: Team Manager sign-off required.\n4.3 High-Risk Case Closure\nApproval Required: Team Manager and Control Manager approval required.\n4.4 Temporary Low-Risk Exception\nApproval Required: Team Manager.\n4.5 Temporary Medium-Risk Exception\nApproval Required: Team Manager and Compliance Lead.\n4.6 Temporary High-Risk Exception\nApproval Required: Team Manager, Compliance Lead, and Director.\n4.7 Permanent Exception\nApproval Required: Director and Head of Risk and Control Governance.\n4.8 SLA Pause Request\nApproval Required: Team Manager. If pause exceeds 2 business days, Senior Manager approval is\nalso required.\n4.9 Audit Evidence Certification\nApproval Required: Process owner or Team Manager. For material controls, Control Manager\nsign-off is required.\n4.10 Remediation Plan Acceptance\nApproval Required:\n• Low risk: Team Manager\n• Medium risk: Team Manager and Control Manager\n• High risk: Control Manager and Director\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "5. Emergency Approvals\nIn urgent operational circumstances:\n• Verbal approval may be used temporarily\n• Written confirmation must be recorded within 1 business day\n• Emergency approval does not waive documentation requirements\n6. Approval Documentation Standards\nAll approvals must contain:\n• Approver name\n• Role/title\n• Date/time of approval\n• Approval method\n• Reference to associated case or exception ID\n7. Related Documents\n• NSFS Exception Handling Policy\n• NSFS Case Review SOP\n• NSFS Audit Readiness Checklist\n• NSFS Corrective Action and Remediation SOP\n3"
+    }
+  ]
+}

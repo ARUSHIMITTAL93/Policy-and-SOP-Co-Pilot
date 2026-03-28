@@ -1,0 +1,19 @@
+{
+  "filename": "NSFS_SLA_Management_Procedure_v1.pdf",
+  "document_title": "NSFS_SLA_Management_Procedure_v1",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nSLA Management Procedure\nVersion 1.0\nDocument Title: NorthStar Financial Services SLA Management Procedure\nDocument ID: NSFS-PRO-003\nVersion: 1.0\nOwner: Process Governance Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Process Governance\n1. Purpose\nThis procedure defines the service level agreement standards for operational case handling and\noutlines the actions required when SLA thresholds are at risk or missed.\n2. Scope\nThis procedure applies to all operational workflows governed by formal turnaround commitments,\nincluding case intake, review, escalation, rework, and closure.\n3. SLA Definitions\nSLA: The maximum allowed time for completion of a defined process step.\nAt Risk: A case is at risk when 75 percent or more of the allowed SLA time has elapsed\nwithout completion.\nBreached: A case is breached when the allowed SLA time has expired without completion.\n4. Standard SLA Timelines\n• Standard cases: 3 business days\n• Priority cases: 1 business day\n• Exception cases: 5 business days\n• Rework cases: 2 business days\n• Critical escalations: 4 business hours\n5. Time Measurement Rules\n• SLA timing begins when a case is marked complete for intake\n• Business-day calculations exclude weekends and company holidays\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "• If required documentation is missing at intake, SLA does not begin until the case is complete\n• SLA pauses require manager approval and must be documented in the case record\n6. At-Risk Monitoring\nAt-risk cases must be:\n• Flagged in the operational queue\n• Reviewed daily by the assigned analyst\n• Highlighted in manager oversight reporting\n• Prioritized for same-day action where practical\n7. SLA Breach Handling\nWhen a case is breached:\n1. The assigned analyst must update the case within 2 business hours\n2. The team manager must be notified on the same business day\n3. Root cause category must be selected\n4. Recovery action must be documented\n5. Repeat breaches must be reviewed during weekly controls meeting\n8. Escalation Rules for Repeated Breaches\nA process must be escalated to the Control Manager if:\n• SLA breaches exceed 5 percent of monthly volume\n• The same root cause appears in 3 or more breaches in a month\n• A High severity incident results from missed SLA\n• Customer-impacting cases are involved\n9. Reporting Requirements\nManagers must review weekly:\n• Total volume by case type\n• Number of at-risk cases\n• Number of breached cases\n• Root causes of breaches\n• Aging trends\n• Recovery action status\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "10. Closure of Breached Cases\nA breached case may be closed when:\n• The required review is completed\n• The breach reason is documented\n• Corrective action is logged if needed\n• Required manager review is complete\n11. Related Documents\n• NSFS Case Review SOP\n• NSFS Incident Escalation Policy\n• NSFS Monthly Controls Review Procedure\n• NSFS Corrective Action and Remediation SOP\n3"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+pymupdf
+faiss-cpu
+openai
+python-dotenv
+tqdm
+requests

@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Generated index artifacts
+data/index/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+dist/

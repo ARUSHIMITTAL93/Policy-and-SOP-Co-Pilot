@@ -1,0 +1,19 @@
+{
+  "filename": "NSFS_Evidence_Submission_Guide_v1.pdf",
+  "document_title": "NSFS_Evidence_Submission_Guide_v1",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nEvidence Submission Guide\nVersion 1.0\nDocument Title: NorthStar Financial Services Evidence Submission Guide\nDocument ID: NSFS-GDE-007\nVersion: 1.0\nOwner: Controls Documentation Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Controls Documentation\n1. Purpose\nThis guide establishes the formatting, naming, quality, and submission standards for evidence files\nused in case reviews, control testing, audit support, and remediation validation.\n2. Scope\nThis guide applies to all evidence submitted in support of:\n• Operational case review\n• Control execution validation\n• Audit readiness\n• Incident documentation\n• Remediation closure\n3. Approved File Types\nAccepted formats include:\n• PDF\n• XLSX\n• CSV\n• PNG or JPG for screenshots\n• TXT or DOCX for supplemental narratives\nEditable files should be converted to PDF for final submission where practical.\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "4. Naming Convention\nEvidence files must follow this structure:\nProcessName_DocumentType_DateRange_Version\nExample:\nCaseReview_ApprovalLog_2026Q1_v1\n5. Minimum Metadata Requirements\nEach evidence package should include:\n• Case or request ID\n• Process name\n• Owner name\n• Reporting period or date range\n• Version number\n• Submission date\n6. Quality Standards\nEvidence must be:\n• Legible\n• Complete\n• Finalized\n• Internally consistent\n• Traceable to source systems where needed\n7. Version Control\n• Drafts must be marked clearly as draft\n• Final submissions must include version number\n• If a file is revised after submission, the updated version must include a new version number and\nnote the reason for update\n8. Redaction and Sensitive Data\nSensitive information must be handled according to internal policy. Redactions must not remove\nkey evidence needed to demonstrate process execution.\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "9. Evidence Rejection Reasons\nEvidence may be rejected if:\n• File format is unsupported\n• Naming convention is not followed\n• File is incomplete or illegible\n• Dates are missing\n• Approval record is absent\n• Submitted version cannot be tied to the requested period\n10. Submission Standards\n• Evidence should be grouped logically by request\n• A summary index should be included for multi-file packages\n• Packages with more than 10 files should include a cover sheet or evidence tracker\n• Final evidence should be submitted through the designated document repository or approved\nchannel\n11. Related Documents\n• NSFS Audit Readiness Checklist\n• NSFS Case Review SOP\n• NSFS Incident Escalation Policy\n• NSFS Data Retention Policy\n3"
+    }
+  ]
+}

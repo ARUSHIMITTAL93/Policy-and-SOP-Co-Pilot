@@ -1,0 +1,19 @@
+{
+  "filename": "NSFS_Exception_Handling_Policy_v1.pdf",
+  "document_title": "NSFS_Exception_Handling_Policy_v1",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nException Handling Policy\nVersion 1.0\nDocument Title: NorthStar Financial Services Exception Handling Policy\nDocument ID: NSFS-POL-004\nVersion: 1.0\nOwner: Risk and Control Governance\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Head of Risk and Control Governance\n1. Purpose\nThis policy defines the process for requesting, reviewing, approving, documenting, and monitoring\nexceptions to standard operational procedures and policy requirements.\n2. Scope\nThis policy applies to temporary or permanent exceptions requested for operational, control, doc-\numentation, or workflow requirements within NorthStar Financial Services.\n3. Definition of Exception\nAn exception is an approved deviation from a documented policy, procedure, control standard, or\napproval requirement.\nExceptions are not permitted for:\n• Known legal obligations\n• Confirmed regulatory reporting obligations\n• Mandatory security requirements without executive approval\n• Requirements explicitly marked non-waivable\n4. Types of Exceptions\n4.1 Temporary Exception\nA short-term deviation approved for a defined business need, with an expiration date.\n4.2 Permanent Exception\nA long-term deviation approved only when formally documented and supported by business justi-\nfication and risk review.\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "5. Required Contents of an Exception Request\nAll exception requests must include:\n• Exception ID\n• Request date\n• Requestor name and team\n• Description of requirement to be waived or modified\n• Business justification\n• Risk assessment\n• Proposed duration\n• Compensating controls, if any\n• Requested approval level\n6. Approval Requirements\n6.1 Low-Risk Exceptions\nRequire manager approval.\n6.2 Medium-Risk Exceptions\nRequire manager approval and Compliance Lead review.\n6.3 High-Risk Exceptions\nRequire manager approval, Compliance Lead review, and Director approval.\n6.4 Critical or Regulatory-Sensitive Exceptions\nRequire approval by the Head of Risk and Control Governance and formal documentation of com-\npensating controls.\n7. Duration Limits\n• Temporary exceptions may not exceed 90 calendar days without renewal\n• Renewals require re-review and documented rationale\n• Permanent exceptions require annual review at minimum\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "8. Monitoring and Review\nAll active exceptions must be:\n• Logged in the exception register\n• Reviewed monthly for upcoming expirations\n• Reassessed if business impact changes\n• Retired promptly when no longer needed\n9. Expired Exceptions\nIf an exception expires without renewal:\n• The standard process must resume immediately\n• Any continued deviation must be treated as a policy breach\n• The manager must document corrective action within 2 business days\n10. Policy Breach vs Exception\nAn unapproved deviation from policy is not an exception. It must be treated as a control or policy\nbreach and handled under incident and remediation procedures.\n11. Related Documents\n• NSFS Approval Matrix\n• NSFS Incident Escalation Policy\n• NSFS Corrective Action and Remediation SOP\n• NSFS Roles and Responsibilities Guide\n3"
+    }
+  ]
+}

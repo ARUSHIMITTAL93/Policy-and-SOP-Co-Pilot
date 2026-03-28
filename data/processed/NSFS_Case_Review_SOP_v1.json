@@ -1,0 +1,23 @@
+{
+  "filename": "NSFS_Case_Review_SOP_v1.pdf",
+  "document_title": "NSFS_Case_Review_SOP_v1",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nCase Review Standard Operating Procedure\nVersion 1.0\nDocument Title: NorthStar Financial Services Case Review Standard Operating Procedure\nDocument ID: NSFS-SOP-002\nVersion: 1.0\nOwner: Operations Excellence Team\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Senior Manager, Operations Excellence\n1. Purpose\nThis procedure defines the standard process for reviewing, validating, approving, rejecting, and\nclosing operational cases processed by NorthStar Financial Services teams.\n2. Scope\nThis SOP applies to all analysts and managers responsible for reviewing operational cases, per-\nforming quality checks, confirming supporting evidence, and finalizing case outcomes.\n3. Case Review Workflow\n3.1 Intake\nUpon receipt, each case must be:\n• Assigned a unique case ID\n• Tagged with case type\n• Routed to the correct queue\n• Marked with intake date and assigned analyst\n3.2 Triage\nThe assigned analyst must:\n• Confirm the case type\n• Review case completeness\n• Identify any missing required fields\n• Determine whether the case is standard, priority, or exception-based\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "3.3 Review\nThe analyst must review:\n• Source documents\n• Case notes\n• Required supporting evidence\n• Prior related cases, if applicable\n• Applicable policy and procedure requirements\n3.4 Validation\nThe analyst must validate:\n• Required documentation is present\n• Data fields are complete and accurate\n• Any calculation or classification is correct\n• Required approvals are attached\n• No conflicting information exists in the record\n3.5 Decision\nThe case must be marked as one of the following:\n• Approved for closure\n• Returned for rework\n• Rejected\n• Escalated\n4. Evidence Requirements\nBefore closure, the case must include:\n• Source documents relevant to the review\n• Supporting evidence file or system export\n• Review notes summarizing analyst actions\n• Required approval, if applicable\n• Closure rationale\nIf any required evidence is missing, the case must not be closed.\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "5. Rework Handling\nA case must be returned for rework if:\n• Required fields are missing\n• Evidence is incomplete or unclear\n• Approval is missing\n• Data does not reconcile\n• Procedure steps were not followed\nReturned cases must include a clear rework reason and expected correction date.\n6. Escalation Criteria\nA case must be escalated if:\n• It presents a potential policy breach\n• SLA miss is likely\n• A required approval cannot be obtained\n• Conflicting data cannot be resolved\n• A systemic issue is identified\n• The case meets High severity incident criteria\n7. Closure Requirements\nA case may be closed only when:\n• Review is complete\n• Required evidence is present\n• No unresolved discrepancies remain\n• Required sign-off is attached\n• Closure notes are entered in the record\n8. Turnaround Standards\nUnless otherwise specified by case type:\n• Standard cases must be reviewed within 3 business days\n• Priority cases must be reviewed within 1 business day\n• Rework must be completed within 2 business days of return\n• Escalated cases must be logged and transferred within 4 business hours\n3"
+    },
+    {
+      "page_number": 4,
+      "text": "9. Roles and Responsibilities\n9.1 Analyst\n• Perform review steps\n• Document actions clearly\n• Attach evidence\n• Escalate as needed\n9.2 Reviewer or Manager\n• Validate quality of review\n• Approve closure where required\n• Monitor rework volumes\n• Resolve disputes or unclear cases\n10. Quality Assurance\nAt least 10 percent of closed cases must be sampled monthly for quality assurance. Cases failing\nQA must be logged for trend analysis and process improvement.\n11. Records Retention\nClosed case files and supporting evidence must be retained according to the NSFS Data Retention\nPolicy.\n12. Related Documents\n• NSFS Incident Escalation Policy\n• NSFS SLA Management Procedure\n• NSFS Evidence Submission Guide\n• NSFS Data Retention Policy\n4"
+    }
+  ]
+}

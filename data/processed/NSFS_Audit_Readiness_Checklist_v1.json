@@ -1,0 +1,19 @@
+{
+  "filename": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+  "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+  "total_pages": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nAudit Readiness Checklist\nVersion 1.0\nDocument Title: NorthStar Financial Services Audit Readiness Checklist\nDocument ID: NSFS-CHK-006\nVersion: 1.0\nOwner: Controls Assurance Team\nEffective Date: January 1, 2026\nReview Frequency: Semi-Annual\nApproved By: Senior Manager, Controls Assurance\n1. Purpose\nThis checklist provides the minimum requirements for preparing documentation and supporting\nmaterials in advance of internal audit, control testing, or regulatory review.\n2. Scope\nThis checklist applies to all operational teams responsible for producing evidence related to control\nexecution, case review, approvals, escalation logs, and remediation activities.\n3. Pre-Audit Preparation Requirements\nPrior to submission, teams must confirm:\n• All requested evidence is complete\n• Files are final and version controlled\n• Naming conventions are followed\n• Date ranges align with the request\n• Approvals are visible where required\n• Sampling populations reconcile to reported counts\n• Supporting procedures are current\n4. Required Evidence Categories\nTeams may be required to provide:\n• SOPs and policy documents\n• Case samples\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "• Approval records\n• Escalation records\n• Control execution logs\n• SLA reporting\n• QA sampling results\n• Remediation records\n5. Submission Checklist\nBefore evidence is submitted, verify:\n• Files are in approved format\n• File names are descriptive and standardized\n• No duplicate or conflicting versions are included\n• Sensitive data is handled according to policy\n• All required pages or tabs are present\n• Summary narrative is included when requested\n6. Common Rejection Reasons\nEvidence packages may be rejected if:\n• File names are unclear\n• Dates do not align to the audit period\n• Required approvals are missing\n• Screenshots are not legible\n• Source data does not reconcile\n• Supporting context is insufficient\n7. Timeline Standards\nUnless otherwise stated in the audit request:\n• Initial evidence package should be prepared within 5 business days\n• Follow-up requests should be addressed within 2 business days\n• Material gaps must be escalated on the same business day they are identified\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "8. Ownership\n8.1 Analysts\nPrepare and organize requested files.\n8.2 Managers\nReview package quality and completeness.\n8.3 Control Owners\nConfirm evidence reflects actual process execution.\n9. Related Documents\n• NSFS Evidence Submission Guide\n• NSFS Data Retention Policy\n• NSFS Monthly Controls Review Procedure\n• NSFS Approval Matrix\n3"
+    }
+  ]
+}

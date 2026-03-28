@@ -1,0 +1,402 @@
+[
+  {
+    "chunk_id": "NSFS_Approval_Matrix_v1_p1_c1",
+    "source_file": "NSFS_Approval_Matrix_v1.pdf",
+    "document_title": "NSFS_Approval_Matrix_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nApproval Matrix\nVersion 1.0\nDocument Title: NorthStar Financial Services Approval Matrix\nDocument ID: NSFS-REF-005\nVersion: 1.0\nOwner: Operations Governance Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Operations Governance\n1. Purpose\nThis document defines approval authority levels for selected operational actions, exceptions, esca-\nlations, and case closures.\n2. Scope\nThis matrix applies to approvals related to:\n• Exception requests\n• High-risk case closures\n• Remediation plan acceptance\n• Audit evidence certification\n• Process deviations\n• SLA pause approvals\n3. Approval Roles\n• Analyst\n• Team Manager\n• Senior Manager\n• Compliance Lead\n• Control Manager\n• Director\n• Head of Risk and Control Governance\n1"
+  },
+  {
+    "chunk_id": "NSFS_Approval_Matrix_v1_p2_c1",
+    "source_file": "NSFS_Approval_Matrix_v1.pdf",
+    "document_title": "NSFS_Approval_Matrix_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "4. Approval Matrix\n4.1 Standard Case Closure\nApproval Required: Analyst may close if no exception, no escalation, and no discrepancy exists.\n4.2 Priority Case Closure\nApproval Required: Team Manager sign-off required.\n4.3 High-Risk Case Closure\nApproval Required: Team Manager and Control Manager approval required.\n4.4 Temporary Low-Risk Exception\nApproval Required: Team Manager.\n4.5 Temporary Medium-Risk Exception\nApproval Required: Team Manager and Compliance Lead.\n4.6 Temporary High-Risk Exception\nApproval Required: Team Manager, Compliance Lead, and Director.\n4.7 Permanent Exception\nApproval Required: Director and Head of Risk and Control Governance.\n4.8 SLA Pause Request\nApproval Required: Team Manager. If pause exceeds 2 business days, Senior Manager approval is\nalso required.\n4.9"
+  },
+  {
+    "chunk_id": "NSFS_Approval_Matrix_v1_p2_c2",
+    "source_file": "NSFS_Approval_Matrix_v1.pdf",
+    "document_title": "NSFS_Approval_Matrix_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "Control Governance.\n4.8 SLA Pause Request\nApproval Required: Team Manager. If pause exceeds 2 business days, Senior Manager approval is\nalso required.\n4.9 Audit Evidence Certification\nApproval Required: Process owner or Team Manager. For material controls, Control Manager\nsign-off is required.\n4.10 Remediation Plan Acceptance\nApproval Required:\n• Low risk: Team Manager\n• Medium risk: Team Manager and Control Manager\n• High risk: Control Manager and Director\n2"
+  },
+  {
+    "chunk_id": "NSFS_Approval_Matrix_v1_p3_c1",
+    "source_file": "NSFS_Approval_Matrix_v1.pdf",
+    "document_title": "NSFS_Approval_Matrix_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "5. Emergency Approvals\nIn urgent operational circumstances:\n• Verbal approval may be used temporarily\n• Written confirmation must be recorded within 1 business day\n• Emergency approval does not waive documentation requirements\n6. Approval Documentation Standards\nAll approvals must contain:\n• Approver name\n• Role/title\n• Date/time of approval\n• Approval method\n• Reference to associated case or exception ID\n7. Related Documents\n• NSFS Exception Handling Policy\n• NSFS Case Review SOP\n• NSFS Audit Readiness Checklist\n• NSFS Corrective Action and Remediation SOP\n3"
+  },
+  {
+    "chunk_id": "NSFS_Audit_Readiness_Checklist_v1_p1_c1",
+    "source_file": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+    "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nAudit Readiness Checklist\nVersion 1.0\nDocument Title: NorthStar Financial Services Audit Readiness Checklist\nDocument ID: NSFS-CHK-006\nVersion: 1.0\nOwner: Controls Assurance Team\nEffective Date: January 1, 2026\nReview Frequency: Semi-Annual\nApproved By: Senior Manager, Controls Assurance\n1. Purpose\nThis checklist provides the minimum requirements for preparing documentation and supporting\nmaterials in advance of internal audit, control testing, or regulatory review.\n2. Scope\nThis checklist applies to all operational teams responsible for producing evidence related to control\nexecution, case review, approvals, escalation logs, and remediation activities.\n3. Pre-Audit Preparation Requirements\nPrior to submission, teams must confirm:\n• All requested evidence is"
+  },
+  {
+    "chunk_id": "NSFS_Audit_Readiness_Checklist_v1_p1_c2",
+    "source_file": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+    "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "escalation logs, and remediation activities.\n3. Pre-Audit Preparation Requirements\nPrior to submission, teams must confirm:\n• All requested evidence is complete\n• Files are final and version controlled\n• Naming conventions are followed\n• Date ranges align with the request\n• Approvals are visible where required\n• Sampling populations reconcile to reported counts\n• Supporting procedures are current\n4. Required Evidence Categories\nTeams may be required to provide:\n• SOPs and policy documents\n• Case samples\n1"
+  },
+  {
+    "chunk_id": "NSFS_Audit_Readiness_Checklist_v1_p2_c1",
+    "source_file": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+    "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "• Approval records\n• Escalation records\n• Control execution logs\n• SLA reporting\n• QA sampling results\n• Remediation records\n5. Submission Checklist\nBefore evidence is submitted, verify:\n• Files are in approved format\n• File names are descriptive and standardized\n• No duplicate or conflicting versions are included\n• Sensitive data is handled according to policy\n• All required pages or tabs are present\n• Summary narrative is included when requested\n6. Common Rejection Reasons\nEvidence packages may be rejected if:\n• File names are unclear\n• Dates do not align to the audit period\n• Required approvals are missing\n• Screenshots are not legible\n• Source data does not reconcile\n• Supporting context is insufficient\n7. Timeline Standards\nUnless otherwise stated in the audit request:\n• Initial"
+  },
+  {
+    "chunk_id": "NSFS_Audit_Readiness_Checklist_v1_p2_c2",
+    "source_file": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+    "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "legible\n• Source data does not reconcile\n• Supporting context is insufficient\n7. Timeline Standards\nUnless otherwise stated in the audit request:\n• Initial evidence package should be prepared within 5 business days\n• Follow-up requests should be addressed within 2 business days\n• Material gaps must be escalated on the same business day they are identified\n2"
+  },
+  {
+    "chunk_id": "NSFS_Audit_Readiness_Checklist_v1_p3_c1",
+    "source_file": "NSFS_Audit_Readiness_Checklist_v1.pdf",
+    "document_title": "NSFS_Audit_Readiness_Checklist_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "8. Ownership\n8.1 Analysts\nPrepare and organize requested files.\n8.2 Managers\nReview package quality and completeness.\n8.3 Control Owners\nConfirm evidence reflects actual process execution.\n9. Related Documents\n• NSFS Evidence Submission Guide\n• NSFS Data Retention Policy\n• NSFS Monthly Controls Review Procedure\n• NSFS Approval Matrix\n3"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p1_c1",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nCase Review Standard Operating Procedure\nVersion 1.0\nDocument Title: NorthStar Financial Services Case Review Standard Operating Procedure\nDocument ID: NSFS-SOP-002\nVersion: 1.0\nOwner: Operations Excellence Team\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Senior Manager, Operations Excellence\n1. Purpose\nThis procedure defines the standard process for reviewing, validating, approving, rejecting, and\nclosing operational cases processed by NorthStar Financial Services teams.\n2. Scope\nThis SOP applies to all analysts and managers responsible for reviewing operational cases, per-\nforming quality checks, confirming supporting evidence, and finalizing case outcomes.\n3. Case Review Workflow\n3.1 Intake\nUpon receipt, each case must be:\n•"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p1_c2",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "forming quality checks, confirming supporting evidence, and finalizing case outcomes.\n3. Case Review Workflow\n3.1 Intake\nUpon receipt, each case must be:\n• Assigned a unique case ID\n• Tagged with case type\n• Routed to the correct queue\n• Marked with intake date and assigned analyst\n3.2 Triage\nThe assigned analyst must:\n• Confirm the case type\n• Review case completeness\n• Identify any missing required fields\n• Determine whether the case is standard, priority, or exception-based\n1"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p2_c1",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "3.3 Review\nThe analyst must review:\n• Source documents\n• Case notes\n• Required supporting evidence\n• Prior related cases, if applicable\n• Applicable policy and procedure requirements\n3.4 Validation\nThe analyst must validate:\n• Required documentation is present\n• Data fields are complete and accurate\n• Any calculation or classification is correct\n• Required approvals are attached\n• No conflicting information exists in the record\n3.5 Decision\nThe case must be marked as one of the following:\n• Approved for closure\n• Returned for rework\n• Rejected\n• Escalated\n4. Evidence Requirements\nBefore closure, the case must include:\n• Source documents relevant to the review\n• Supporting evidence file or system export\n• Review notes summarizing analyst actions\n• Required approval, if applicable\n• Closure"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p2_c2",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "relevant to the review\n• Supporting evidence file or system export\n• Review notes summarizing analyst actions\n• Required approval, if applicable\n• Closure rationale\nIf any required evidence is missing, the case must not be closed.\n2"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p3_c1",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "5. Rework Handling\nA case must be returned for rework if:\n• Required fields are missing\n• Evidence is incomplete or unclear\n• Approval is missing\n• Data does not reconcile\n• Procedure steps were not followed\nReturned cases must include a clear rework reason and expected correction date.\n6. Escalation Criteria\nA case must be escalated if:\n• It presents a potential policy breach\n• SLA miss is likely\n• A required approval cannot be obtained\n• Conflicting data cannot be resolved\n• A systemic issue is identified\n• The case meets High severity incident criteria\n7. Closure Requirements\nA case may be closed only when:\n• Review is complete\n• Required evidence is present\n• No unresolved discrepancies remain\n• Required sign-off is attached\n• Closure notes are entered in the record\n8. Turnaround"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p3_c2",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 2,
+    "text": "Required evidence is present\n• No unresolved discrepancies remain\n• Required sign-off is attached\n• Closure notes are entered in the record\n8. Turnaround Standards\nUnless otherwise specified by case type:\n• Standard cases must be reviewed within 3 business days\n• Priority cases must be reviewed within 1 business day\n• Rework must be completed within 2 business days of return\n• Escalated cases must be logged and transferred within 4 business hours\n3"
+  },
+  {
+    "chunk_id": "NSFS_Case_Review_SOP_v1_p4_c1",
+    "source_file": "NSFS_Case_Review_SOP_v1.pdf",
+    "document_title": "NSFS_Case_Review_SOP_v1",
+    "page_number": 4,
+    "chunk_index_on_page": 1,
+    "text": "9. Roles and Responsibilities\n9.1 Analyst\n• Perform review steps\n• Document actions clearly\n• Attach evidence\n• Escalate as needed\n9.2 Reviewer or Manager\n• Validate quality of review\n• Approve closure where required\n• Monitor rework volumes\n• Resolve disputes or unclear cases\n10. Quality Assurance\nAt least 10 percent of closed cases must be sampled monthly for quality assurance. Cases failing\nQA must be logged for trend analysis and process improvement.\n11. Records Retention\nClosed case files and supporting evidence must be retained according to the NSFS Data Retention\nPolicy.\n12. Related Documents\n• NSFS Incident Escalation Policy\n• NSFS SLA Management Procedure\n• NSFS Evidence Submission Guide\n• NSFS Data Retention Policy\n4"
+  },
+  {
+    "chunk_id": "NSFS_Evidence_Submission_Guide_v1_p1_c1",
+    "source_file": "NSFS_Evidence_Submission_Guide_v1.pdf",
+    "document_title": "NSFS_Evidence_Submission_Guide_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nEvidence Submission Guide\nVersion 1.0\nDocument Title: NorthStar Financial Services Evidence Submission Guide\nDocument ID: NSFS-GDE-007\nVersion: 1.0\nOwner: Controls Documentation Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Controls Documentation\n1. Purpose\nThis guide establishes the formatting, naming, quality, and submission standards for evidence files\nused in case reviews, control testing, audit support, and remediation validation.\n2. Scope\nThis guide applies to all evidence submitted in support of:\n• Operational case review\n• Control execution validation\n• Audit readiness\n• Incident documentation\n• Remediation closure\n3. Approved File Types\nAccepted formats include:\n• PDF\n• XLSX\n• CSV\n• PNG or JPG for screenshots\n•"
+  },
+  {
+    "chunk_id": "NSFS_Evidence_Submission_Guide_v1_p1_c2",
+    "source_file": "NSFS_Evidence_Submission_Guide_v1.pdf",
+    "document_title": "NSFS_Evidence_Submission_Guide_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "readiness\n• Incident documentation\n• Remediation closure\n3. Approved File Types\nAccepted formats include:\n• PDF\n• XLSX\n• CSV\n• PNG or JPG for screenshots\n• TXT or DOCX for supplemental narratives\nEditable files should be converted to PDF for final submission where practical.\n1"
+  },
+  {
+    "chunk_id": "NSFS_Evidence_Submission_Guide_v1_p2_c1",
+    "source_file": "NSFS_Evidence_Submission_Guide_v1.pdf",
+    "document_title": "NSFS_Evidence_Submission_Guide_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "4. Naming Convention\nEvidence files must follow this structure:\nProcessName_DocumentType_DateRange_Version\nExample:\nCaseReview_ApprovalLog_2026Q1_v1\n5. Minimum Metadata Requirements\nEach evidence package should include:\n• Case or request ID\n• Process name\n• Owner name\n• Reporting period or date range\n• Version number\n• Submission date\n6. Quality Standards\nEvidence must be:\n• Legible\n• Complete\n• Finalized\n• Internally consistent\n• Traceable to source systems where needed\n7. Version Control\n• Drafts must be marked clearly as draft\n• Final submissions must include version number\n• If a file is revised after submission, the updated version must include a new version number and\nnote the reason for update\n8. Redaction and Sensitive Data\nSensitive information must be handled according to"
+  },
+  {
+    "chunk_id": "NSFS_Evidence_Submission_Guide_v1_p2_c2",
+    "source_file": "NSFS_Evidence_Submission_Guide_v1.pdf",
+    "document_title": "NSFS_Evidence_Submission_Guide_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "version must include a new version number and\nnote the reason for update\n8. Redaction and Sensitive Data\nSensitive information must be handled according to internal policy. Redactions must not remove\nkey evidence needed to demonstrate process execution.\n2"
+  },
+  {
+    "chunk_id": "NSFS_Evidence_Submission_Guide_v1_p3_c1",
+    "source_file": "NSFS_Evidence_Submission_Guide_v1.pdf",
+    "document_title": "NSFS_Evidence_Submission_Guide_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "9. Evidence Rejection Reasons\nEvidence may be rejected if:\n• File format is unsupported\n• Naming convention is not followed\n• File is incomplete or illegible\n• Dates are missing\n• Approval record is absent\n• Submitted version cannot be tied to the requested period\n10. Submission Standards\n• Evidence should be grouped logically by request\n• A summary index should be included for multi-file packages\n• Packages with more than 10 files should include a cover sheet or evidence tracker\n• Final evidence should be submitted through the designated document repository or approved\nchannel\n11. Related Documents\n• NSFS Audit Readiness Checklist\n• NSFS Case Review SOP\n• NSFS Incident Escalation Policy\n• NSFS Data Retention Policy\n3"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p1_c1",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nException Handling Policy\nVersion 1.0\nDocument Title: NorthStar Financial Services Exception Handling Policy\nDocument ID: NSFS-POL-004\nVersion: 1.0\nOwner: Risk and Control Governance\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Head of Risk and Control Governance\n1. Purpose\nThis policy defines the process for requesting, reviewing, approving, documenting, and monitoring\nexceptions to standard operational procedures and policy requirements.\n2. Scope\nThis policy applies to temporary or permanent exceptions requested for operational, control, doc-\numentation, or workflow requirements within NorthStar Financial Services.\n3. Definition of Exception\nAn exception is an approved deviation from a documented policy, procedure, control standard,"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p1_c2",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "NorthStar Financial Services.\n3. Definition of Exception\nAn exception is an approved deviation from a documented policy, procedure, control standard, or\napproval requirement.\nExceptions are not permitted for:\n• Known legal obligations\n• Confirmed regulatory reporting obligations\n• Mandatory security requirements without executive approval\n• Requirements explicitly marked non-waivable\n4. Types of Exceptions\n4.1 Temporary Exception\nA short-term deviation approved for a defined business need, with an expiration date.\n4.2 Permanent Exception\nA long-term deviation approved only when formally documented and supported by business justi-\nfication and risk review.\n1"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p2_c1",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "5. Required Contents of an Exception Request\nAll exception requests must include:\n• Exception ID\n• Request date\n• Requestor name and team\n• Description of requirement to be waived or modified\n• Business justification\n• Risk assessment\n• Proposed duration\n• Compensating controls, if any\n• Requested approval level\n6. Approval Requirements\n6.1 Low-Risk Exceptions\nRequire manager approval.\n6.2 Medium-Risk Exceptions\nRequire manager approval and Compliance Lead review.\n6.3 High-Risk Exceptions\nRequire manager approval, Compliance Lead review, and Director approval.\n6.4 Critical or Regulatory-Sensitive Exceptions\nRequire approval by the Head of Risk and Control Governance and formal documentation of com-\npensating controls.\n7. Duration Limits\n• Temporary exceptions may not exceed 90 calendar"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p2_c2",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "Risk and Control Governance and formal documentation of com-\npensating controls.\n7. Duration Limits\n• Temporary exceptions may not exceed 90 calendar days without renewal\n• Renewals require re-review and documented rationale\n• Permanent exceptions require annual review at minimum\n2"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p3_c1",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "8. Monitoring and Review\nAll active exceptions must be:\n• Logged in the exception register\n• Reviewed monthly for upcoming expirations\n• Reassessed if business impact changes\n• Retired promptly when no longer needed\n9. Expired Exceptions\nIf an exception expires without renewal:\n• The standard process must resume immediately\n• Any continued deviation must be treated as a policy breach\n• The manager must document corrective action within 2 business days\n10. Policy Breach vs Exception\nAn unapproved deviation from policy is not an exception. It must be treated as a control or policy\nbreach and handled under incident and remediation procedures.\n11. Related Documents\n• NSFS Approval Matrix\n• NSFS Incident Escalation Policy\n• NSFS Corrective Action and Remediation SOP\n• NSFS Roles and"
+  },
+  {
+    "chunk_id": "NSFS_Exception_Handling_Policy_v1_p3_c2",
+    "source_file": "NSFS_Exception_Handling_Policy_v1.pdf",
+    "document_title": "NSFS_Exception_Handling_Policy_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 2,
+    "text": "procedures.\n11. Related Documents\n• NSFS Approval Matrix\n• NSFS Incident Escalation Policy\n• NSFS Corrective Action and Remediation SOP\n• NSFS Roles and Responsibilities Guide\n3"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p1_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nIncident Escalation Policy\nVersion 1.0\nDocument Title: NorthStar Financial Services Incident Escalation Policy\nDocument ID: NSFS-POL-001\nVersion: 1.0\nOwner: Regulatory Operations Governance Team\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Regulatory Operations\n1. Purpose\nThe purpose of this policy is to establish a consistent process for identifying, classifying, escalating,\nand documenting operational incidents at NorthStar Financial Services. Timely escalation supports\nrisk mitigation, leadership visibility, and regulatory readiness.\n2. Scope\nThis policy applies to all NorthStar Financial Services personnel involved in operations, control\nmonitoring, case management, reporting, and issue remediation. It covers incidents"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p1_c2",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "NorthStar Financial Services personnel involved in operations, control\nmonitoring, case management, reporting, and issue remediation. It covers incidents affecting oper-\national performance, control effectiveness, service commitments, data quality, compliance obliga-\ntions, and customer-impacting processes.\n3. Definitions\nIncident: Any event that disrupts normal operations, causes control failure, creates material\nprocessing delays, introduces data inaccuracies, or results in missed service obligations.\nSeverity Level: The assigned impact category for an incident based on business risk, customer\nimpact, process disruption, and compliance exposure.\nBusiness Hours: Monday through Friday, 8:00 AM to 6:00 PM local time, excluding company\nholidays.\nControl Manager: The manager responsible for"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p1_c3",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 3,
+    "text": "exposure.\nBusiness Hours: Monday through Friday, 8:00 AM to 6:00 PM local time, excluding company\nholidays.\nControl Manager: The manager responsible for operational control oversight for the affected\nprocess.\nCompliance Lead: The designated compliance representative supporting the affected line of\nbusiness.\n4. Severity Classification\n4.1 Low Severity\nAn incident may be classified as Low severity if:\n• It has minimal operational impact\n1"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p2_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "• No customer impact is expected\n• No regulatory or compliance exposure exists\n• Resolution is expected within one business day\n• No cross-functional escalation is required\n4.2 Medium Severity\nAn incident may be classified as Medium severity if:\n• It affects a team’s ability to meet normal throughput targets\n• Limited backlog growth or processing delays occur\n• Temporary workaround is required\n• Risk of SLA miss exists if unresolved\n• One or more managers must be informed\n4.3 High Severity\nAn incident may be classified as High severity if:\n• Multiple teams or systems are affected\n• SLA breach is likely or confirmed\n• Significant backlog, control gap, or processing disruption occurs\n• Customer, audit, or compliance impact is possible\n• Urgent leadership review is required\n4.4 Critical"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p2_c2",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "backlog, control gap, or processing disruption occurs\n• Customer, audit, or compliance impact is possible\n• Urgent leadership review is required\n4.4 Critical Severity\nAn incident may be classified as Critical severity if:\n• There is major operational disruption\n• Material customer impact exists\n• Confirmed compliance or regulatory exposure exists\n• Core business processing is significantly impaired\n• Immediate executive and cross-functional escalation is required\n5. Escalation Timelines\n5.1 Low Severity\nLow severity incidents must be logged within one business day and reviewed by the team manager\nduring the next scheduled operating review.\n2"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p3_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "5.2 Medium Severity\nMedium severity incidents must be escalated to the team manager within 8 business hours of\nidentification.\n5.3 High Severity\nHigh severity incidents must be escalated to the Control Manager and Compliance Lead within 4\nbusiness hours of identification.\n5.4 Critical Severity\nCritical severity incidents must be escalated immediately and no later than 1 hour after identifica-\ntion. The following parties must be notified:\n• Control Manager\n• Compliance Lead\n• Director, Regulatory Operations\n• Technology Support Lead if a system issue is involved\n• Business Executive delegate, as applicable\n6. Required Notification Content\nAll escalations must include:\n• Incident title\n• Date and time identified\n• Affected process or system\n• Severity classification\n• Summary of issue\n•"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p3_c2",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 2,
+    "text": "All escalations must include:\n• Incident title\n• Date and time identified\n• Affected process or system\n• Severity classification\n• Summary of issue\n• Initial business impact\n• Current workaround, if any\n• Immediate next steps\n• Named incident owner\n3"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p4_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 4,
+    "chunk_index_on_page": 1,
+    "text": "7. Documentation Requirements\nEach incident record must contain:\n• Unique incident ID\n• Date/time opened\n• Severity level\n• Root cause category\n• Stakeholders notified\n• Evidence of escalation\n• Resolution plan\n• Closure date\n• Validation notes\nSupporting evidence may include screenshots, case samples, control logs, reconciliation files,\nincident emails, and approval records.\n8. Escalation Triggers\nIncidents must be escalated immediately if any of the following occurs:\n• A backlog exceeds 20 percent above baseline for 2 consecutive business days\n• A daily operational SLA is missed\n• Required evidence for control execution is unavailable\n• A system failure impacts critical processing\n• A recurring issue appears 3 or more times within 30 calendar days\n• A compliance or audit commitment is"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p4_c2",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 4,
+    "chunk_index_on_page": 2,
+    "text": "A system failure impacts critical processing\n• A recurring issue appears 3 or more times within 30 calendar days\n• A compliance or audit commitment is at risk\n9. After-Hours Escalation\nIf a High or Critical incident is identified outside business hours:\n• The incident must still be logged immediately\n• The on-call manager must be notified within 1 hour\n• Critical incidents require direct phone escalation to the incident distribution list\n• A formal written summary must be sent by 9:00 AM the next business day if not already issued\n4"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p5_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 5,
+    "chunk_index_on_page": 1,
+    "text": "10. Roles and Responsibilities\n10.1 Analyst\n• Identify and log incidents promptly\n• Gather supporting facts and evidence\n• Notify manager based on severity\n• Update incident record until reassigned\n10.2 Team Manager\n• Validate severity classification\n• Ensure escalation occurs within required timeline\n• Assign action owner\n• Monitor progress toward resolution\n10.3 Control Manager\n• Oversee response for High and Critical incidents\n• Ensure control risks are documented\n• Coordinate with compliance and business stakeholders\n10.4 Compliance Lead\n• Assess compliance exposure\n• Advise on required reporting or documentation\n• Support closure validation where needed\n11. Resolution and Closure\nAn incident may be closed only when:\n• Immediate issue has been resolved or stabilized\n• Required"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p5_c2",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 5,
+    "chunk_index_on_page": 2,
+    "text": "closure validation where needed\n11. Resolution and Closure\nAn incident may be closed only when:\n• Immediate issue has been resolved or stabilized\n• Required stakeholders have been updated\n• Root cause is documented\n• Remediation plan is created if needed\n• Closure approval is recorded from the appropriate manager\n5"
+  },
+  {
+    "chunk_id": "NSFS_Incident_Escalation_Policy_v1_p6_c1",
+    "source_file": "NSFS_Incident_Escalation_Policy_v1.pdf",
+    "document_title": "NSFS_Incident_Escalation_Policy_v1",
+    "page_number": 6,
+    "chunk_index_on_page": 1,
+    "text": "12. Policy Exceptions\nAny deviation from this policy must be approved in writing by the Director, Regulatory Operations\nand documented in the exception register.\n13. Related Documents\n• NSFS Case Review SOP\n• NSFS SLA Management Procedure\n• NSFS Corrective Action and Remediation SOP\n• NSFS Approval Matrix\n6"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p1_c1",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nCorrective Action and Remediation Standard Operating\nProcedure\nVersion 1.0\nDocument Title: NorthStar Financial Services Corrective Action and Remediation Standard\nOperating Procedure\nDocument ID: NSFS-SOP-008\nVersion: 1.0\nOwner: Risk Remediation Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Risk Remediation Office\n1. Purpose\nThis SOP defines the process for documenting, assigning, tracking, validating, and closing corrective\nactions arising from incidents, control gaps, SLA breaches, QA findings, or audit observations.\n2. Scope\nThis procedure applies to all remediation items created in response to:\n• Incidents\n• Policy breaches\n• Control failures\n• Audit issues\n• Repeat SLA breaches\n• QA exceptions\n3. Remediation"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p1_c2",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "remediation items created in response to:\n• Incidents\n• Policy breaches\n• Control failures\n• Audit issues\n• Repeat SLA breaches\n• QA exceptions\n3. Remediation Lifecycle\n3.1 Issue Identification\nA remediation item must be created when an issue requires corrective action beyond immediate\nresolution.\n3.2 Action Plan Creation\nEach remediation item must include:\n• Remediation ID\n1"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p2_c1",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "• Linked issue or incident ID\n• Root cause summary\n• Corrective action description\n• Action owner\n• Target completion date\n• Risk rating\n• Validation approach\n3.3 Approval\nAction plans must be approved according to the NSFS Approval Matrix.\n3.4 Tracking\nAll open remediation items must be tracked weekly until closure. Status options are:\n• Not Started\n• In Progress\n• Pending Validation\n• Closed\n• Past Due\n3.5 Validation\nA remediation item may move to Pending Validation only when the action owner confirms comple-\ntion and submits supporting evidence.\nValidation may include:\n• Control re-performance\n• Sample review\n• Manager confirmation\n• Documentation review\n• Metric improvement evidence\n2"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p3_c1",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "3.6 Closure\nA remediation item may be closed only when:\n• Action is complete\n• Required evidence is attached\n• Validation is successful\n• Required approval is recorded\n4. Due Date Standards\n• Low-risk items: target closure within 30 calendar days\n• Medium-risk items: target closure within 20 calendar days\n• High-risk items: target closure within 10 calendar days\n• Critical items: target closure date defined by Director, with immediate oversight\n5. Past Due Items\nIf a remediation item becomes past due:\n• The action owner must provide an updated timeline within 1 business day\n• The manager must review the delay reason\n• High-risk past due items must be escalated to the Control Manager on the same business day\n6. Evidence Requirements\nClosure evidence may include:\n• Updated SOP or policy\n•"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p3_c2",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 2,
+    "text": "items must be escalated to the Control Manager on the same business day\n6. Evidence Requirements\nClosure evidence may include:\n• Updated SOP or policy\n• Control report\n• Test results\n• Case samples\n• Approval records\n• Screenshots showing implemented change\n• Training completion records, if process change required training\n7. Recurring Issues\nIf the same root cause appears in 3 or more remediation items within a rolling 90-day period, the\nissue must be reviewed for broader process redesign.\n3"
+  },
+  {
+    "chunk_id": "NSFS_Remediation_SOP_v1_p4_c1",
+    "source_file": "NSFS_Remediation_SOP_v1.pdf",
+    "document_title": "NSFS_Remediation_SOP_v1",
+    "page_number": 4,
+    "chunk_index_on_page": 1,
+    "text": "8. Roles and Responsibilities\n8.1 Action Owner\nExecute corrective action and provide evidence.\n8.2 Manager\nMonitor progress and remove blockers.\n8.3 Control Manager\nReview higher-risk actions and validate control adequacy.\n8.4 Compliance Lead\nSupport review where policy or control obligations are affected.\n9. Reporting\nManagers must review weekly:\n• Open remediation count\n• Aging by risk level\n• Past due items\n• Validation failure rates\n• Repeat root causes\n10. Related Documents\n• NSFS Incident Escalation Policy\n• NSFS Approval Matrix\n• NSFS SLA Management Procedure\n• NSFS Monthly Controls Review Procedure\n4"
+  },
+  {
+    "chunk_id": "NSFS_SLA_Management_Procedure_v1_p1_c1",
+    "source_file": "NSFS_SLA_Management_Procedure_v1.pdf",
+    "document_title": "NSFS_SLA_Management_Procedure_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 1,
+    "text": "NorthStar Financial Services\nSLA Management Procedure\nVersion 1.0\nDocument Title: NorthStar Financial Services SLA Management Procedure\nDocument ID: NSFS-PRO-003\nVersion: 1.0\nOwner: Process Governance Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Process Governance\n1. Purpose\nThis procedure defines the service level agreement standards for operational case handling and\noutlines the actions required when SLA thresholds are at risk or missed.\n2. Scope\nThis procedure applies to all operational workflows governed by formal turnaround commitments,\nincluding case intake, review, escalation, rework, and closure.\n3. SLA Definitions\nSLA: The maximum allowed time for completion of a defined process step.\nAt Risk: A case is at risk when 75 percent or more of"
+  },
+  {
+    "chunk_id": "NSFS_SLA_Management_Procedure_v1_p1_c2",
+    "source_file": "NSFS_SLA_Management_Procedure_v1.pdf",
+    "document_title": "NSFS_SLA_Management_Procedure_v1",
+    "page_number": 1,
+    "chunk_index_on_page": 2,
+    "text": "closure.\n3. SLA Definitions\nSLA: The maximum allowed time for completion of a defined process step.\nAt Risk: A case is at risk when 75 percent or more of the allowed SLA time has elapsed\nwithout completion.\nBreached: A case is breached when the allowed SLA time has expired without completion.\n4. Standard SLA Timelines\n• Standard cases: 3 business days\n• Priority cases: 1 business day\n• Exception cases: 5 business days\n• Rework cases: 2 business days\n• Critical escalations: 4 business hours\n5. Time Measurement Rules\n• SLA timing begins when a case is marked complete for intake\n• Business-day calculations exclude weekends and company holidays\n1"
+  },
+  {
+    "chunk_id": "NSFS_SLA_Management_Procedure_v1_p2_c1",
+    "source_file": "NSFS_SLA_Management_Procedure_v1.pdf",
+    "document_title": "NSFS_SLA_Management_Procedure_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 1,
+    "text": "• If required documentation is missing at intake, SLA does not begin until the case is complete\n• SLA pauses require manager approval and must be documented in the case record\n6. At-Risk Monitoring\nAt-risk cases must be:\n• Flagged in the operational queue\n• Reviewed daily by the assigned analyst\n• Highlighted in manager oversight reporting\n• Prioritized for same-day action where practical\n7. SLA Breach Handling\nWhen a case is breached:\n1. The assigned analyst must update the case within 2 business hours\n2. The team manager must be notified on the same business day\n3. Root cause category must be selected\n4. Recovery action must be documented\n5. Repeat breaches must be reviewed during weekly controls meeting\n8. Escalation Rules for Repeated Breaches\nA process must be escalated to the"
+  },
+  {
+    "chunk_id": "NSFS_SLA_Management_Procedure_v1_p2_c2",
+    "source_file": "NSFS_SLA_Management_Procedure_v1.pdf",
+    "document_title": "NSFS_SLA_Management_Procedure_v1",
+    "page_number": 2,
+    "chunk_index_on_page": 2,
+    "text": "documented\n5. Repeat breaches must be reviewed during weekly controls meeting\n8. Escalation Rules for Repeated Breaches\nA process must be escalated to the Control Manager if:\n• SLA breaches exceed 5 percent of monthly volume\n• The same root cause appears in 3 or more breaches in a month\n• A High severity incident results from missed SLA\n• Customer-impacting cases are involved\n9. Reporting Requirements\nManagers must review weekly:\n• Total volume by case type\n• Number of at-risk cases\n• Number of breached cases\n• Root causes of breaches\n• Aging trends\n• Recovery action status\n2"
+  },
+  {
+    "chunk_id": "NSFS_SLA_Management_Procedure_v1_p3_c1",
+    "source_file": "NSFS_SLA_Management_Procedure_v1.pdf",
+    "document_title": "NSFS_SLA_Management_Procedure_v1",
+    "page_number": 3,
+    "chunk_index_on_page": 1,
+    "text": "10. Closure of Breached Cases\nA breached case may be closed when:\n• The required review is completed\n• The breach reason is documented\n• Corrective action is logged if needed\n• Required manager review is complete\n11. Related Documents\n• NSFS Case Review SOP\n• NSFS Incident Escalation Policy\n• NSFS Monthly Controls Review Procedure\n• NSFS Corrective Action and Remediation SOP\n3"
+  }
+]

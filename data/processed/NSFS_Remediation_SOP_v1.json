@@ -1,0 +1,23 @@
+{
+  "filename": "NSFS_Remediation_SOP_v1.pdf",
+  "document_title": "NSFS_Remediation_SOP_v1",
+  "total_pages": 4,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "NorthStar Financial Services\nCorrective Action and Remediation Standard Operating\nProcedure\nVersion 1.0\nDocument Title: NorthStar Financial Services Corrective Action and Remediation Standard\nOperating Procedure\nDocument ID: NSFS-SOP-008\nVersion: 1.0\nOwner: Risk Remediation Office\nEffective Date: January 1, 2026\nReview Frequency: Annual\nApproved By: Director, Risk Remediation Office\n1. Purpose\nThis SOP defines the process for documenting, assigning, tracking, validating, and closing corrective\nactions arising from incidents, control gaps, SLA breaches, QA findings, or audit observations.\n2. Scope\nThis procedure applies to all remediation items created in response to:\n• Incidents\n• Policy breaches\n• Control failures\n• Audit issues\n• Repeat SLA breaches\n• QA exceptions\n3. Remediation Lifecycle\n3.1 Issue Identification\nA remediation item must be created when an issue requires corrective action beyond immediate\nresolution.\n3.2 Action Plan Creation\nEach remediation item must include:\n• Remediation ID\n1"
+    },
+    {
+      "page_number": 2,
+      "text": "• Linked issue or incident ID\n• Root cause summary\n• Corrective action description\n• Action owner\n• Target completion date\n• Risk rating\n• Validation approach\n3.3 Approval\nAction plans must be approved according to the NSFS Approval Matrix.\n3.4 Tracking\nAll open remediation items must be tracked weekly until closure. Status options are:\n• Not Started\n• In Progress\n• Pending Validation\n• Closed\n• Past Due\n3.5 Validation\nA remediation item may move to Pending Validation only when the action owner confirms comple-\ntion and submits supporting evidence.\nValidation may include:\n• Control re-performance\n• Sample review\n• Manager confirmation\n• Documentation review\n• Metric improvement evidence\n2"
+    },
+    {
+      "page_number": 3,
+      "text": "3.6 Closure\nA remediation item may be closed only when:\n• Action is complete\n• Required evidence is attached\n• Validation is successful\n• Required approval is recorded\n4. Due Date Standards\n• Low-risk items: target closure within 30 calendar days\n• Medium-risk items: target closure within 20 calendar days\n• High-risk items: target closure within 10 calendar days\n• Critical items: target closure date defined by Director, with immediate oversight\n5. Past Due Items\nIf a remediation item becomes past due:\n• The action owner must provide an updated timeline within 1 business day\n• The manager must review the delay reason\n• High-risk past due items must be escalated to the Control Manager on the same business day\n6. Evidence Requirements\nClosure evidence may include:\n• Updated SOP or policy\n• Control report\n• Test results\n• Case samples\n• Approval records\n• Screenshots showing implemented change\n• Training completion records, if process change required training\n7. Recurring Issues\nIf the same root cause appears in 3 or more remediation items within a rolling 90-day period, the\nissue must be reviewed for broader process redesign.\n3"
+    },
+    {
+      "page_number": 4,
+      "text": "8. Roles and Responsibilities\n8.1 Action Owner\nExecute corrective action and provide evidence.\n8.2 Manager\nMonitor progress and remove blockers.\n8.3 Control Manager\nReview higher-risk actions and validate control adequacy.\n8.4 Compliance Lead\nSupport review where policy or control obligations are affected.\n9. Reporting\nManagers must review weekly:\n• Open remediation count\n• Aging by risk level\n• Past due items\n• Validation failure rates\n• Repeat root causes\n10. Related Documents\n• NSFS Incident Escalation Policy\n• NSFS Approval Matrix\n• NSFS SLA Management Procedure\n• NSFS Monthly Controls Review Procedure\n4"
+    }
+  ]
+}
