@@ -20,11 +20,15 @@ Policy and SOP Copilot is a lightweight retrieval-augmented generation (RAG) dem
    python3 -m pip install -r requirements.txt
    ```
 
-3. Create a local `.env` file with your OpenAI API key:
+3. Create a local `.env` file with your OpenAI API key and local app credentials:
 
    ```env
    OPENAI_API_KEY=your_api_key_here
+   APP_USERNAME=your_app_username
+   APP_PASSWORD=your_app_password
    ```
+
+   The login credentials stay local in `.env` and are not committed to GitHub.
 
 4. Prepare the retrieval assets:
 
@@ -39,3 +43,5 @@ Policy and SOP Copilot is a lightweight retrieval-augmented generation (RAG) dem
 ```bash
 python3 -m streamlit run app/streamlit_app.py
 ```
+
+The app opens with a sign-in screen before the upload and Q&A workflow is available.
