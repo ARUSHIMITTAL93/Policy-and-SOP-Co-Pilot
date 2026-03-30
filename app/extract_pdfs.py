@@ -1,9 +1,8 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
-import fitz
+from document_pipeline import extract_pdf_from_path, save_extracted_document
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -12,38 +11,13 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 
 def extract_pdf(pdf_path: Path) -> dict:
-    document = fitz.open(pdf_path)
-    metadata = document.metadata or {}
-    document_title = (metadata.get("title") or "").strip() or pdf_path.stem
-
-    pages = []
-    for page_index, page in enumerate(document, start=1):
-        pages.append(
-            {
-                "page_number": page_index,
-                "text": page.get_text("text").strip(),
-            }
-        )
-
-    extracted_document = {
-        "filename": pdf_path.name,
-        "document_title": document_title,
-        "total_pages": document.page_count,
-        "pages": pages,
-    }
-
-    document.close()
-    return extracted_document
+    return extract_pdf_from_path(pdf_path)
 
 
 def save_extracted_pdf(pdf_path: Path) -> Path:
     extracted_document = extract_pdf(pdf_path)
     output_path = PROCESSED_DIR / f"{pdf_path.stem}.json"
-    output_path.write_text(
-        json.dumps(extracted_document, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-    return output_path
+    return save_extracted_document(extracted_document, output_path)
 
 
 def main() -> None:

@@ -1,19 +1,28 @@
 from __future__ import annotations
 
 import html
+from collections import Counter
 
 import streamlit as st
+from streamlit.runtime.uploaded_file_manager import UploadedFile
 
 from answer import ANSWER_MODEL, answer_question
+from document_pipeline import (
+    DocumentCorpus,
+    build_corpus_from_chunks,
+    create_chunks_from_document,
+    extract_pdf_document,
+)
+from retrieve import get_client
 
 
 st.set_page_config(page_title="Policy and SOP Copilot", layout="wide")
 
 EXAMPLE_QUESTIONS = [
-    "What is the escalation timeline for a high-risk issue?",
-    "Who approves a permanent exception?",
-    "What evidence is required before case closure?",
-    "How long should high-risk remediation items take?",
+    "What is the purpose of this document?",
+    "What approvals or sign-offs are required?",
+    "What deadlines or timelines are mentioned?",
+    "What evidence is needed before closure?",
 ]
 
 
@@ -28,13 +37,22 @@ def apply_styles() -> None:
                 linear-gradient(180deg, #f8f5ef 0%, #eef3f1 100%);
         }
 
-        .hero-card {
-            padding: 1.4rem 1.6rem;
+        .hero-card, .upload-card, .turn-card {
             border-radius: 22px;
-            background: linear-gradient(135deg, rgba(247, 240, 227, 0.96), rgba(230, 240, 237, 0.94));
+            background: rgba(255, 255, 255, 0.88);
             border: 1px solid rgba(106, 134, 131, 0.18);
             box-shadow: 0 18px 40px rgba(49, 67, 65, 0.08);
+        }
+
+        .hero-card {
+            padding: 1.4rem 1.6rem;
+            background: linear-gradient(135deg, rgba(247, 240, 227, 0.96), rgba(230, 240, 237, 0.94));
             margin-bottom: 1.25rem;
+        }
+
+        .upload-card, .turn-card {
+            padding: 1rem 1.1rem;
+            margin-bottom: 1rem;
         }
 
         .hero-title {
@@ -45,11 +63,11 @@ def apply_styles() -> None:
             margin-bottom: 0.35rem;
         }
 
-        .hero-copy {
+        .hero-copy, .subtle-copy {
             font-size: 1rem;
             color: #47615e;
             line-height: 1.55;
-            max-width: 48rem;
+            max-width: 50rem;
         }
 
         .section-label {
@@ -59,15 +77,6 @@ def apply_styles() -> None:
             text-transform: uppercase;
             color: #6a8683;
             margin-bottom: 0.45rem;
-        }
-
-        .turn-card {
-            padding: 1rem 1.1rem;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.86);
-            border: 1px solid rgba(90, 111, 108, 0.16);
-            box-shadow: 0 12px 30px rgba(46, 61, 60, 0.07);
-            margin-bottom: 0.9rem;
         }
 
         .user-question {
@@ -87,6 +96,17 @@ def apply_styles() -> None:
             font-size: 0.78rem;
             font-weight: 600;
         }
+
+        .file-chip {
+            display: inline-block;
+            padding: 0.32rem 0.72rem;
+            margin: 0.18rem 0.4rem 0.18rem 0;
+            border-radius: 999px;
+            background: #edf5f2;
+            color: #31504d;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
         </style>
         """,
         unsafe_allow_html=True,
@@ -94,14 +114,20 @@ def apply_styles() -> None:
 
 
 def initialize_state() -> None:
-    if "history" not in st.session_state:
-        st.session_state.history = []
-    if "answer_error" not in st.session_state:
-        st.session_state.answer_error = None
-    if "question_input" not in st.session_state:
-        st.session_state.question_input = ""
-    if "next_question_input" not in st.session_state:
-        st.session_state.next_question_input = None
+    defaults = {
+        "history": [],
+        "answer_error": None,
+        "question_input": "",
+        "next_question_input": None,
+        "active_corpus": None,
+        "processing_error": None,
+        "processing_success": None,
+        "processing_warnings": [],
+    }
+
+    for key, value in defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = value
 
 
 def apply_pending_question_update() -> None:
@@ -110,15 +136,22 @@ def apply_pending_question_update() -> None:
         st.session_state.next_question_input = None
 
 
+def clear_processing_messages() -> None:
+    st.session_state.processing_error = None
+    st.session_state.processing_success = None
+    st.session_state.processing_warnings = []
+
+
 def render_header() -> None:
     st.markdown(
         """
         <div class="hero-card">
-            <div class="section-label">Policy And SOP Copilot</div>
+            <div class="section-label">Upload-First RAG Demo</div>
             <div class="hero-title">Policy and SOP Copilot</div>
             <div class="hero-copy">
-                Ask grounded questions over the indexed PDF library. Each answer is built from retrieved
-                policy and SOP chunks, and the supporting source passages appear directly underneath.
+                Upload one or more PDFs, process them into a temporary session index, and ask grounded
+                questions against only those uploaded documents. Nothing from the upload flow is written
+                into the project data folders.
             </div>
         </div>
         """,
@@ -126,14 +159,23 @@ def render_header() -> None:
     )
 
 
-def render_sidebar() -> tuple[int, str]:
+def render_sidebar(corpus: DocumentCorpus | None) -> tuple[int, str]:
     with st.sidebar:
         st.markdown("### Demo Controls")
         top_k = st.slider("Retrieved chunks", min_value=3, max_value=8, value=5, step=1)
         model = st.text_input("Answer model", value=ANSWER_MODEL)
 
+        st.markdown("### Session Corpus")
+        if corpus is None:
+            st.info("Upload PDFs and click Process Documents to activate a session corpus.")
+        else:
+            st.success(
+                f"Active corpus: {corpus.document_count} PDF(s) and {corpus.chunk_count} chunks"
+            )
+
         st.markdown("### Quick Fill")
         selected_example = st.selectbox("Example question", EXAMPLE_QUESTIONS)
+        st.caption("These example prompts run only against the PDFs you process in this session.")
         if st.button("Use Example", use_container_width=True):
             st.session_state.next_question_input = selected_example
             st.rerun()
@@ -143,9 +185,149 @@ def render_sidebar() -> tuple[int, str]:
             st.session_state.history = []
             st.session_state.answer_error = None
 
-        st.caption("History stays in this browser session so you can compare answers side by side.")
+        st.caption(
+            "A newly processed upload batch replaces the current session corpus and clears prior answers."
+        )
 
     return top_k, model
+
+
+def build_skip_message(filename: str, reason: str) -> str:
+    return f"{filename}: {reason}"
+
+
+def validate_uploaded_files(uploaded_files: list[UploadedFile] | None) -> None:
+    if not uploaded_files:
+        raise ValueError("Upload at least one PDF before processing.")
+
+    invalid_files = [uploaded_file.name for uploaded_file in uploaded_files if not uploaded_file.name.lower().endswith(".pdf")]
+    if invalid_files:
+        joined_files = ", ".join(sorted(invalid_files))
+        raise ValueError(f"Only PDF uploads are supported right now. Remove: {joined_files}")
+
+    duplicates = sorted(
+        file_name
+        for file_name, count in Counter(uploaded_file.name for uploaded_file in uploaded_files).items()
+        if count > 1
+    )
+    if duplicates:
+        joined_duplicates = ", ".join(duplicates)
+        raise ValueError(
+            "Duplicate filenames were uploaded in the same batch. "
+            f"Please rename or remove: {joined_duplicates}"
+        )
+
+
+def build_uploaded_corpus(
+    uploaded_files: list[UploadedFile] | None,
+) -> tuple[DocumentCorpus, list[str]]:
+    validate_uploaded_files(uploaded_files)
+    assert uploaded_files is not None
+
+    chunks: list[dict] = []
+    warnings: list[str] = []
+
+    for uploaded_file in uploaded_files:
+        try:
+            document = extract_pdf_document(uploaded_file.name, uploaded_file.getvalue())
+        except Exception as error:  # noqa: BLE001
+            warnings.append(build_skip_message(uploaded_file.name, f"could not be read as a PDF ({error})"))
+            continue
+
+        document_chunks = create_chunks_from_document(document)
+        if not document_chunks:
+            warnings.append(build_skip_message(uploaded_file.name, "no extractable text was found"))
+            continue
+
+        chunks.extend(document_chunks)
+
+    if not chunks:
+        raise ValueError(
+            "None of the uploaded PDFs produced searchable text, so the existing session corpus was kept."
+        )
+
+    client = get_client()
+    corpus = build_corpus_from_chunks(chunks, client, show_progress=False)
+    return corpus, warnings
+
+
+def process_uploaded_files(uploaded_files: list[UploadedFile] | None) -> None:
+    clear_processing_messages()
+
+    try:
+        corpus, warnings = build_uploaded_corpus(uploaded_files)
+    except (FileNotFoundError, ValueError) as error:
+        st.session_state.processing_error = str(error)
+        return
+    except Exception as error:  # noqa: BLE001
+        st.session_state.processing_error = (
+            "Could not process the uploaded PDFs. The previous session corpus is still active. "
+            f"Details: {error}"
+        )
+        return
+
+    st.session_state.active_corpus = corpus
+    st.session_state.history = []
+    st.session_state.answer_error = None
+    st.session_state.next_question_input = ""
+    st.session_state.processing_warnings = warnings
+    st.session_state.processing_success = (
+        f"Processed {corpus.document_count} PDF(s) into {corpus.chunk_count} chunks."
+    )
+    st.rerun()
+
+
+def render_upload_section() -> None:
+    st.markdown(
+        """
+        <div class="upload-card">
+            <div class="section-label">1. Upload And Process</div>
+            <div class="subtle-copy">
+                Upload one or more PDFs, then build a temporary in-memory index for this browser session.
+                The app will answer only from the active uploaded files.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    uploaded_files = st.file_uploader(
+        "Upload PDF documents",
+        type=["pdf"],
+        accept_multiple_files=True,
+        help="Only PDF files are supported in this version. A new processed batch replaces the active corpus.",
+    )
+
+    if uploaded_files:
+        st.markdown("**Selected files**")
+        st.write(", ".join(uploaded_file.name for uploaded_file in uploaded_files))
+
+    if st.button("Process Documents", type="primary", use_container_width=True):
+        with st.spinner("Extracting text, chunking pages, and building the temporary index..."):
+            process_uploaded_files(uploaded_files)
+
+    if st.session_state.processing_error:
+        st.error(st.session_state.processing_error)
+
+    if st.session_state.processing_success:
+        st.success(st.session_state.processing_success)
+
+    for warning in st.session_state.processing_warnings:
+        st.warning(warning)
+
+
+def render_active_corpus(corpus: DocumentCorpus | None) -> None:
+    if corpus is None:
+        st.info("Process at least one uploaded PDF to unlock question answering.")
+        return
+
+    st.markdown('<div class="section-label">Active Session Corpus</div>', unsafe_allow_html=True)
+    st.caption("Questions will be answered only from these uploaded PDFs.")
+    file_chips = "".join(
+        f'<span class="file-chip">{html.escape(document_name)}</span>'
+        for document_name in corpus.document_names
+    )
+    st.markdown(file_chips, unsafe_allow_html=True)
 
 
 def render_sources(retrieved_chunks: list[dict]) -> None:
@@ -157,9 +339,7 @@ def render_sources(retrieved_chunks: list[dict]) -> None:
             f"| score {chunk['score']:.4f}"
         )
         with st.expander(label):
-            st.caption(
-                f"Document: {chunk['document_title']} | Chunk ID: {chunk['chunk_id']}"
-            )
+            st.caption(f"Document: {chunk['document_title']} | Chunk ID: {chunk['chunk_id']}")
             st.write(chunk["text"])
 
 
@@ -182,16 +362,30 @@ def render_turn(turn: dict, turn_number: int) -> None:
     render_sources(turn["retrieved_chunks"])
 
 
-def submit_question(question: str, top_k: int, model: str) -> None:
+def submit_question(
+    question: str,
+    top_k: int,
+    model: str,
+    corpus: DocumentCorpus | None,
+) -> None:
     cleaned_question = question.strip()
     if not cleaned_question:
         st.session_state.answer_error = "Please enter a question."
         return
 
+    if corpus is None:
+        st.session_state.answer_error = "Upload and process PDFs before asking a question."
+        return
+
     st.session_state.answer_error = None
-    with st.spinner("Searching documents and drafting an answer..."):
+    with st.spinner("Searching the uploaded PDFs and drafting an answer..."):
         try:
-            payload = answer_question(cleaned_question, top_k=top_k, model=model)
+            payload = answer_question(
+                cleaned_question,
+                top_k=top_k,
+                model=model,
+                corpus=corpus,
+            )
             payload["top_k"] = top_k
             st.session_state.history.insert(0, payload)
             st.session_state.next_question_input = ""
@@ -206,26 +400,40 @@ def main() -> None:
     apply_styles()
     initialize_state()
     apply_pending_question_update()
+
+    corpus = st.session_state.active_corpus
+
     render_header()
-    top_k, model = render_sidebar()
+    top_k, model = render_sidebar(corpus)
+    render_upload_section()
+    render_active_corpus(corpus)
+
+    can_ask = corpus is not None
+    placeholder = (
+        "Ask a question about the uploaded PDFs."
+        if can_ask
+        else "Upload and process PDFs first."
+    )
 
     with st.form("qa_form", clear_on_submit=False):
         question = st.text_area(
             "Question",
-            placeholder="What is the escalation timeline for a high-risk issue?",
+            placeholder=placeholder,
             height=110,
             key="question_input",
+            disabled=not can_ask,
         )
-        submitted = st.form_submit_button("Ask")
+        submitted = st.form_submit_button("Ask", disabled=not can_ask)
 
     if submitted:
-        submit_question(question, top_k=top_k, model=model)
+        submit_question(question, top_k=top_k, model=model, corpus=corpus)
 
     if st.session_state.answer_error:
         st.error(st.session_state.answer_error)
 
     if not st.session_state.history:
-        st.info("Ask a question to generate your first grounded answer.")
+        if can_ask:
+            st.info("Ask a question to generate your first grounded answer from the uploaded PDFs.")
         return
 
     for turn_number, turn in enumerate(st.session_state.history, start=1):

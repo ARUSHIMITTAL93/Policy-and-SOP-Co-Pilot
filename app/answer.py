@@ -5,6 +5,7 @@ import json
 
 from openai import OpenAI
 
+from document_pipeline import DocumentCorpus
 from retrieve import get_client, retrieve_chunks
 
 
@@ -150,9 +151,12 @@ def generate_answer(
 
 
 def answer_question(
-    question: str, top_k: int = DEFAULT_TOP_K, model: str = ANSWER_MODEL
+    question: str,
+    top_k: int = DEFAULT_TOP_K,
+    model: str = ANSWER_MODEL,
+    corpus: DocumentCorpus | None = None,
 ) -> dict:
-    chunks = retrieve_chunks(question=question, top_k=top_k)
+    chunks = retrieve_chunks(question=question, top_k=top_k, corpus=corpus)
     if not chunks:
         raise ValueError("No retrieved chunks were returned for the question.")
 

@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import pickle
 from pathlib import Path
 
 import faiss
@@ -11,12 +10,12 @@ import numpy as np
 from dotenv import load_dotenv
 from openai import OpenAI
 
+from document_pipeline import DocumentCorpus, EMBEDDING_MODEL, load_corpus_from_disk
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INDEX_DIR = PROJECT_ROOT / "data" / "index"
 INDEX_PATH = INDEX_DIR / "faiss_index.bin"
 METADATA_PATH = INDEX_DIR / "chunk_metadata.pkl"
-EMBEDDING_MODEL = "text-embedding-3-small"
 
 
 def parse_args() -> argparse.Namespace:
@@ -53,31 +52,6 @@ def get_client() -> OpenAI:
     validate_api_key()
     return OpenAI()
 
-
-def load_index() -> faiss.Index:
-    if not INDEX_PATH.exists():
-        raise FileNotFoundError(
-            f"FAISS index not found: {INDEX_PATH}. Run app/build_index.py first."
-        )
-
-    return faiss.read_index(str(INDEX_PATH))
-
-
-def load_metadata() -> list[dict]:
-    if not METADATA_PATH.exists():
-        raise FileNotFoundError(
-            f"Chunk metadata not found: {METADATA_PATH}. Run app/build_index.py first."
-        )
-
-    with METADATA_PATH.open("rb") as metadata_file:
-        metadata = pickle.load(metadata_file)
-
-    if not isinstance(metadata, list):
-        raise ValueError("chunk_metadata.pkl must contain a list of chunk records")
-
-    return metadata
-
-
 def embed_query(client: OpenAI, question: str) -> np.ndarray:
     response = client.embeddings.create(
         model=EMBEDDING_MODEL,
@@ -89,12 +63,15 @@ def embed_query(client: OpenAI, question: str) -> np.ndarray:
     return query_vector
 
 
-def retrieve_chunks(question: str, top_k: int = 5) -> list[dict]:
+def retrieve_chunks(
+    question: str, top_k: int = 5, corpus: DocumentCorpus | None = None
+) -> list[dict]:
     if top_k <= 0:
         raise ValueError("top_k must be greater than 0")
 
-    index = load_index()
-    metadata = load_metadata()
+    corpus = corpus or load_corpus_from_disk(INDEX_PATH, METADATA_PATH)
+    index = corpus.index
+    metadata = corpus.metadata
 
     if index.ntotal != len(metadata):
         raise ValueError(
